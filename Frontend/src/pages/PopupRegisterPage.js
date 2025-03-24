@@ -25,6 +25,7 @@ export default function PopupRegisterPage() {
       return <Navigate to={'/'} />
     } else {
       alert('registration failed');
+      window.location.reload(); 
     }
   }
   if (redirect) {

@@ -20,11 +20,11 @@ export default function RegisterPage() {
     });
     if (response.status === 200) {
       alert('Registration successfully done! You can now log in with your username and password.');
-      window.location.reload(); 
       setRedirect(true);
-      return <Navigate to={'/'} />
+      return <Navigate to={'/'} /> 
     } else {
       alert('registration failed');
+      window.location.reload(); 
     }
   }
   if (redirect) {
